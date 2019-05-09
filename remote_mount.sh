@@ -1,11 +1,11 @@
 alias umcsif="umount /Users/$USER/Desktop/Mount"
 mcsif () {
-    remote_username='bgerrity'
+    remote_username='sysiow'
     local_hostname=$1 # local not referring to this system
-    cs_domain='cs.ucdavis.edu'
+    domain='cs.ucdavis.edu'
 
     mountpoint="/Users/$USER/Desktop/Mount"
-    login="$remote_username@$local_hostname.$cs_domain"
+    login="$remote_username@$local_hostname.$domain"
 
     if (( "$#" != 1 )) 
     then
